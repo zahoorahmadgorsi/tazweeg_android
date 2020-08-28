@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">تزويج</string>
+    <string name="consultant">المعرفین</string>
+    <string name="failure">"تعذر معالجة الطلب. يرجى إعادة المحاولة لاحقًا."</string>
+    <string name="general_error">"حدث خطأ ما في الخادم ، يرجى إعادة المحاولة."</string>
+    <string name="information">"معلومات"</string>
+    <string name="verification">التحقق</string>
+    <string name="yes">"نعم"</string>
+    <string name="no">"لا"</string>
+    <string name="success">نجاح</string>
+    <!--onboarding-->
+    <string name="done">فعله</string>
+    <string name="skip">تخطى</string>
+    <string name="next">التالى</string>
+    <!--ConsultantResponse-->
+    <string name="welcome">مرحبا بكم في tazweeg.com</string>
+    <string name="member_login">"تقديم تفاصيل تسجيل دخول الأعضاء"</string>
+    <string name="consultant_login">"تقديم تفاصيل تسجيل دخول المعرف"</string>
+    <string name="user_name">كود العضو</string>
+    <string name="password">"كلمه المرور"</string>
+    <string name="forgot_password">"هل نسيت كلمة المرور"</string>
+    <string name="login">"تسجيل الدخول"</string>
+    <string name="or">"أو"</string>
+    <string name="login_via_smartpass">"تسجيل الدخول عبر الهوية الرقمية"</string>
+    <string name="smartpass_reason">"الهوية الدقميه هي بيانات الاعتماد الوحيدة للوصول إلى الخدمات الحكومية في دولة الإمارات العربية المتحدة."</string>
+    <string name="need_an_account">"حساب جديد ؟"</string>
+    <string name="signup">"تسجيل"</string>
+    <string name="copy_rights">C"حقوق الطبع والنشر © 2018 Tazweeg. جميع الحقوق محفوظة."</string>
+    <string name="invalid_username">كود العضو غير صحيح</string>
+    <string name="invalid_password">رمز مرور خاطئ</string>
+    <string name="invalid_user_consultant">"مستخدم غير صالح. أنت مسجل كالمعرف انتقل إلى تسجيل دخول المعرف"</string>
+    <string name="invalid_user_member">"مستخدم غير صالح. أنت مسجل كعضو انتقل إلى تسجيل دخول العضو"</string>
+    <string name="verification_failed">"بيانات اعتماد غير صالحة. يرجى إعادة المحاولة."</string>
+    <!--Forgot Password-->
+
+    <string name="phone_number_prompt">رقم الجوال مع رمز البلد ، على سبيل المثال 97158xxxxxxx</string>
+    <string name="forgot_password_question">"هل نسيت كلمة المرور؟"</string>
+    <string name="forgot_password_message">"نحتاج فقط إلى رقم هاتفك المسجل أو عنوان بريدك الإلكتروني. وسنرسل لك بيانات الدخول."</string>
+    <string name="email_prompt">البريد الإلكتروني ، على سبيل المثال ، abc@xyz.ab</string>
+    <string name="one_is_required">"كتابة رقم الهاتف أو عنوان البريد الإلكتروني"</string>
+    <string name="check_phone_email">"تم إرسال بيانات الدخول الخاصة بك إلى رقم الهاتف أو عنوان البريد الإلكتروني المسجل."</string>
+    <string name="emailPhoneNotExist">"المعلومات المقدمة غير موجودة."</string>
+    <string name="check_phone">"حسابك فعال. لتفعيل حسابك ، يرجى إدخال الرمز السري الذي تم إرساله عبر الرسائل القصيرة."</string>
+    <!--MEMBER/common SIGNUP-->
+    <string name="select_state">"اختر إمارة / محافظة"</string>
+    <string name="select_consultant">"اختيار المعرف"</string>
+    <string name="gender_title">الجنس * </string>
+    <string name="i_have_read_and_agree_to">لقد قرأت ووافقت على </string>
+    <string name="terms_and_conditions">الأحكام والشروط</string>
+    <string name="select_emirate_s">"اختر إمارة / محافظة:"</string>
+    <string name="error_name_required">الاسم مطلوب</string>
+    <string name="error_invalid_phone_number">"رقم الهاتف غير صالح"</string>
+    <string name="invalid_email">أنت لا تقدم بريدًا إلكترونيًا صالحًا</string>
+    <string name="emirate_notValid">"إمارة/ محافظة غير صالحة ، يرجى اختيار إمارة/ محافظة واحدة على الأقل"</string>
+    <string name="error_accept_terms">"يرجى قبول الشروط والأحكام للمضي قدما"</string>
+    <string name="duplicate_user">""أنت مسجل بالفعل. إذا لم تتذكر كلمة مرورك ، فيرجى تجربة الخيار نسيت كلمة المرور.""</string>
+    <string name="ok">"حسنا"</string>
+    <string name="ksa_success_signup_msg">"شكرا علي التسجيل معنا ، لإستكمال الطلب الخاص بك يرجي التواصل معنا علي الرقم 0097126225889 أو إرسال واتس اب علي الرقم "</string>
+    <string name="ksa_consultant_success_signup_msg">"شكرا لتواصلك مع موقع تزويج التابع لمبادرة تزويج سوف نقوم بالتواصل معك لتكمله باقي الإجراءات"</string>
+    <!--Verification Code-->
+    <string name="verification_code">"رمز التحقق"</string>
+    <string name="we_have_sent_you">"الرجاء إدخال رمز التحقق الذي تم إرساله إلى هاتفك المحمول."</string>
+    <string name="error_invalid_verification_code">رمز التحقق غير صالح</string>
+    <string name="consultant_success_signup_msg">"الرجاء إدخال رمز التحقق الذي تم إرساله لك عبر الرسائل القصيرة."</string>
+    <string name="member_success_signup_msg">"تم التحقق من رمز التحقق ، لتسجيل الدخول ، الرجاء استخدام بيانات الاعتماد التي تم إرسالها لك عبر الرسائل القصيرة."</string>
+    <string name="otp_verified">"تم التحقق من OTP بنجاح ، يرجى الاستمرار في بقية خطوات التسجيل."</string>
+    <!--Member Profile-->
+    <string name="profile">الملف الشخصي</string>
+    <string name="your_profile">"الملف الشخصي"</string>
+    <string name="zero_percent_complete">"0 ٪ مكتمل"</string>
+    <string name="member_name">"اسم العضو"</string>
+    <string name="member_code">"كود العضو"</string>
+    <string name="profile_status">"حالة الملف الشخصي"</string>
+    <string name="consultant_name">"اسم المعرف"</string>
+    <string name="consultant_mobile_number">"رقم هاتف المعرف"</string>
+    <string name="emirates_serve_in">"الإمارات / المحافظات"</string>
+    <string name="matchings">"التوافق"</string>
+    <string name="percentage_complete">"٪ اكتمال"</string>;
+    <string name="areYouSure">"هل أنت واثق؟"</string>
+    <string name="incomplete_profile">"الملف الشخصي غير مكتمل يرجي تكمله الملف لرؤيه التوافق"</string>
+    <string name="confirm">"التأكيد"</string>
+    <!--Drawer-->
+    <string name="settings">"إعدادات"</string>
+    <string name="terms_and_condition">"الشروط والأحكام"</string>
+    <string name="faqs">"أسئلة مكررة"</string>
+    <string name="privacy_policy">"سياسة الخصوصية"</string>
+    <string name="contact_us">"اتصل بنا"</string>
+    <string name="sign_out">"خروج"</string>
+
+    <!--Step 1-->
+    <string name="step_one">"الخطوة 1"</string>
+    <string name="applicant_data">"بيانات مقدم الطلب"</string>
+    <string name="please_enter_your_data">"يرجي كتابة البيانات الخاصه بك"</string>
+    <string name="name_title">"الاسم *"</string>
+    <string name="mobile_number_title">"رقم الهاتف المتحرك *"</string>
+    <string name="email_title">البريد الإلكتروني *</string>
+    <string name="emirates_id_card_number_title">""رقم الهوية الوطنية *"</string>
+    <string name="family_name_title">"القبيله *"</string>
+    <string name="family_name_to_show">"هل تريد أن يرى الأعضاء الآخرون القبيلة؟"</string>
+    <string name="date_of_birth_title">"تاريخ الميلاد *"</string>
+    <string name="place_of_birth_title">"مكان الميلاد *"</string>
+    <string name="country_title">"البلد *"</string>
+    <string name="emirate_title">"الإمارة / محافظة *"</string>
+    <string name="address_title">"العنوان *"</string>
+    <string name="residence_title">"الإقامة *"</string>
+    <string name="ethnicity_title">"الأصل العرقي *"</string>
+    <string name="mother_nationality_title">"جنسية الأم *"</string>
+    <string name="submit_and_next">"إرسال و التالي"</string>
+    <string name="invalid_emirates_id">رقم بطاقة الهوية الوطنية غير صالح</string>
+    <string name="invalid_family_name">اسم العائلة غير صالح </string>
+    <string name="invalid_dob">تاريخ ميلاد غير صالح</string>
+    <string name="invalid_pob">مكان الميلاد غير صالح </string>
+    <string name="invalid_address">عنوان خاطئ </string>
+    <!--Step 2-->
+    <string name="step_two">"الخطوة 2"</string>
+    <string name="bride_arrangement_title">"ترتيب الزوج *"</string>
+    <string name="accepting_polygamy_title">"هل تقبل تعدد الزوجات؟"</string>
+    <string name="is_smoking_title">"التدخين *"</string>
+    <string name="skin_color_title">"لون البشره *"</string>
+    <string name="hair_color_title">"لون الشعر *"</string>
+    <string name="hair_type_title">"نوع الشعر *"</string>
+    <string name="eye_color_title">"لون العيون *"</string>
+    <string name="height_title">"الطول *"</string>
+    <string name="body_type_title">"القوام *"</string>
+    <string name="body_weight_title">"وزن الجسم (كيلوغرام) *"</string>
+    <string name="sect_type_title">"نوع الطائفة *"</string>
+    <string name="veil_title">"الحجاب *"</string>
+    <string name="has_driving_license_title">"هل لديك رخصة قيادة؟ *"</string>
+    <!--Step 3-->
+    <string name="step_three">"الخطوة 3"</string>
+    <string name="education_level_title">"المستوي التعليمي *"</string>
+    <string name="commitment_to_religion_title">"الإلتزام بالدين *"</string>
+    <string name="financial_status_title">"الحالة المالية *"</string>
+    <string name="social_status_title">"الحالة الإجتماعيه *"</string>
+    <string name="has_children_title">"هل يوجد اطفال؟ *"</string>
+    <string name="number_of_children_title">"عدد الاطفال *"</string>
+    <string name="reproduction_title">"العقم *"</string>
+    <string name="is_working_title">"العمل *"</string>
+    <string name="job_type_title">"نوع الوظيفه *"</string>
+    <string name="occupation_title">"طبيعه العمل *"</string>
+    <string name="job_title_title">"المسمي الوظيفي *"</string>
+    <string name="annual_income_title">"المدخول السنوي *"</string>
+    <string name="any_disease_title">"أي مرض - جنسي / جلد / مزمن / وراثي *"</string>
+    <string name="disease_name_title">"المرض (يرجى ذكر)"</string>
+    <string name="invalid_occupation">عمل غير صالح</string>
+    <string name="invalid_job_title">المسمى الوظيفي غير صالح</string>
+    <string name="invalid_disease_name">اسم المرض غير صالح</string>
+    <!--Step 4-->
+    <string name="step_four">"الخطوة 4"</string>
+    <string name="spouse_data">"بيانات العريس أو العروسه *"</string>
+    <string name="required_spouse_specifications">"يرجى تقديم مواصفات الزوج المطلوبة"</string>
+    <string name="nationality_title">"الجنسية *"</string>
+    <string name="age_title">"العمر *"</string>
+    <string name="will_pay_to_bride_title">"كم مستعد تدفع من أجل العروس *"</string>
+    <string name="live_with_spouse_title">"أين ستعيش مع الزوج؟"</string>
+    <string name="bride_data">"بيانات العروس"</string>
+    <string name="groom_data">"بيانات العريس"</string>
+    <string name="gcc_check">"هل توافق على الزواج من دول مجلس التعاون الخليجي؟"</string>
+    <string name="female_social_status_check">"هل أنتي على استعداد للزواج من مطلق أو  متزوج  أو  أرمل  أو  أم أعزب؟"</string>
+    <string name="male_social_status_check">"هل أنت على استعداد للزواج من مطلق أو أرمل أو واحد؟"</string>
+    <!--Step 5-->
+    <string name="step_five">"الخطوة 5"</string>
+    <string name="names_of_2_relatives">"ضع أسماء 2 أقارب"</string>
+    <string name="name_of_first_relative">" إسم القريب الأول *"</string>
+    <string name="phone_number_of_first_relative">رقم هاتف القريب الأول *</string>
+    <string name="relationship_with_first_relative">العلاقة مع أول قريب *</string>
+    <string name="name_of_second_relative">اسم القريب الثاني *</string>
+    <string name="phone_number_of_second_relative">رقم هاتف القريب الثاني *</string>
+    <string name="relationship_with_second_relative">العلاقة مع القريب الثاني *</string>
+    <string name="description_of_applicant">وصف موجز لمقدم الطلب *</string>
+    <string name="form5_language_arabic">العربية</string>
+    <string name="form5_language_english">الإنجليزية</string>
+    <string name="form5_language_other">آخر</string>
+    <string name="the_language_title">"اللغه *"</string>
+    <string name="signature_title">"التوقيع *"</string>
+    <string name="put_your_signature_here">"ضع توقيعك هنا"</string>
+    <string name="submit">"ارسال"</string>
+    <string name="save_signature">حفظ التوقيع</string>
+    <string name="clear_signature">واضح التوقيع</string>
+    <string name="write_your_signature_below">اكتب توقيعك أدناه</string>
+    <string name="language_required">"اللغة مطلوبة"</string>
+    <string name="sign_required">"التوقيع مطلوب"</string>
+    <!--Step 6-->
+    <string name="already_paid">"تم دفع الرسوم بالفعل"</string>
+    <string name="profile_completed">"تمت عمليه الدفع بنجاح والآن حسابك مكتمل"</string>
+    <string name="payment">"دفع"</string>
+    <string name="age_check">"لقد اكتمل ملفك الشخصي ولكنه قيد المعالجة"</string>;
+    <!--Member Details-->
+    <string name="edit">"تعديل"</string>
+    <string name="member_information">"بياناتي"</string>
+    <string name="required_information">"المطلوب"</string>
+    <string name="choosing">"تخيير"</string>
+    <string name="matching">"التوافق"</string>
+    <string name="married">"تزويج"</string>
+    <string name="full_name">"الاسم الكامل"</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="emirates_id">"الهويه الوطنية"</string>
+    <string name="family">القبيله</string>
+    <string name="place_of_birth">مكان الميلاد</string>
+    <string name="age">"العمر"</string>
+    <string name="address">"العنوان"</string>
+    <string name="country">البلد</string>
+    <string name="state">"الإمارة / محافظة"</string>
+    <string name="residence">"الإقامة"</string>
+    <string name="mother_nationality">"جنسية الأم"</string>
+    <string name="gender">"الجنس"</string>
+    <string name="ethnicity">"الأصل العرقي"</string>
+    <string name="bride_arrangement">ترتيب العروس</string>
+    <string name="accepting_polygamy">"هل تقبل تعدد الزوجات؟"</string>
+    <string name="is_smoking">التدخين</string>
+    <string name="skin_color">لون البشرة</string>
+    <string name="hair_color">لون الشعر</string>
+    <string name="hair_type">نوع الشعر</string>
+    <string name="eye_color">لون العين</string>
+    <string name="height">"الطول"</string>
+    <string name="body_type">نوع الجسم</string>
+    <string name="body_weight">"وزن الجسم (كيلوغرام)"</string>
+    <string name="sect_type">"نوع الطائفة"</string>
+    <string name="veil">"الحجاب"</string>
+    <string name="has_driving_license">"رخصة القيادة"</string>
+    <string name="education_level">مستوى التعليم</string>
+    <string name="religion_commitment">"الالتزام بالدين"</string>
+    <string name="financial_status">"الوضع المالي"</string>
+    <string name="social_status">الحالة الاجتماعية</string>
+    <string name="is_working">يعمل</string>
+    <string name="has_children">"هل يوجد أطفال"</string>
+    <string name="reproduction">الإنجاب</string>
+    <string name="number_of_children">عدد الاطفال</string>
+    <string name="occupation">"العمل"</string>
+    <string name="job_type">نوع الوظيفة</string>
+    <string name="job_title">"العنوان الوظيفي"</string>
+    <string name="annual_income">الدخل السنوي</string>
+    <string name="any_disease">أي مرض</string>
+    <string name="disease_name">اسم المرض</string>
+    <string name="live_with_spouse">"أين ستعيش مع الزوج"</string>
+    <string name="first_relative"> إسم القريب الأول</string>
+    <string name="first_relative_number">رقم هاتف القريب الأول</string>
+    <string name="first_relative_relation">العلاقة مع أول قريب</string>
+    <string name="second_relative">اسم القريب الثاني</string>
+    <string name="second_relative_number">رقم هاتف القريب الثاني</string>
+    <string name="second_relative_relation">العلاقة مع القريب الثاني</string>
+    <string name="applicant_description">وصف مقدم الطلب</string>
+    <string name="will_pay_to_bride">"كم ستدفع للزوج"</string>
+    <string name="has_person_refer">"هل لديك شخص تربطه به؟"</string>
+    <!--Settings-->
+    <string name="change_password">غير كلمة السر</string>
+    <string name="change_language">"غير اللغة"</string>
+    <!--Change Password-->
+    <string name="old_password">كلمة المرور القديمة</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="old_pass_missing">"كلمة المرور القديمة مفقودة"</string>
+    <string name="new_pass_missing">"كلمة المرور الجديدة مفقودة"</string>
+    <string name="new_pass_length">"يجب أن يكون طول كلمة المرور الجديدة على الأقل 6 أحرف"</string>
+    <string name="passwords_not_match">"كلمة المرور الجديدة والتأكيد غير متطابق"</string>
+    <string name="changePasswordSuccess">"تم تغيير كلمة المرور بنجاح."</string>
+    <string name="passwordIsMisMatched">"كلمة المرور غير متطابقة"</string>
+    <!--Change Language-->
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
+    <!--Contact Us-->
+    <string name="tazweeg_phone_number">"0097126225889"</string>
+    <string name="tazweeg_email">app@tazweeg.com</string>
+    <string name="tazweeg_facebook">"فيس بوك"</string>
+    <string name="tazweeg_instagram">"انستجرام"</string>
+    <string name="tazweeg_pinterest">"بينتيريست"</string>
+    <string name="tazweeg_telegram">"تيليجرام"</string>
+    <string name="tazweeg_twitter">"تويتر"</string>
+    <string name="tazweeg_address">مكتب 5206 - برج أداكس ، جزيرة الريم ، أبو ظبي ، الإمارات العربية المتحدة. صندوق بريد 42524</string>
+    <string name="emailClientTitle">إرسال بريد إلكتروني عبر ...</string>
+    <string name="emailSubject">"ملاحظات التطبيق"</string>
+    <string name="user_information">معلومات العضو:</string>
+    <string name="user_phone_number">رقم هاتف العضو :</string>
+    <string name="app_information">معلومات التطبيق:</string>
+    <string name="device_information">معلومات الجهاز:</string>
+    <string name="device_model">طراز الجهاز :</string>
+    <string name="android_version">نسخة أندرويد :</string>
+    <string name="device_language">لغة الجهاز :</string>
+    <string name="app_language">لغة التطبيق :</string>
+    <string name="carrier">شبكه خلوية :</string>
+    <string name="timezone">وحدة زمنية :</string>
+    <string name="connection_status">حالة الإتصال :</string>
+
+    <string name="title_activity_dashboard">ActivityDashboard</string>
+
+
+    <!--<string name="profile">الملف الشخصي</string>-->
+    <string name="home">الصفحة الرئيسية</string>
+
+    <string name="please_wait_text">انتظر...</string>
+
+    <!--User details parameters heading-->
+    <string name="name">الاسم</string>
+    <string name="email">البريد الإلكتروني</string>
+
+    <string name="phone_number_title">رقم الهاتف: *</string>
+
+
+    <!--Heading for Requirement details parameters-->
+
+
+    <string name="previous">السابق</string>
+    <string name="not_available">غير متوفر</string>
+
+    <string name="select_a_country">"اختر دولة"</string>
+
+    <string name="enter_mobile_number">"الرجاء إدخال رقم الهاتف"</string>
+    <string name="placeholder_mobile_number">رقم الهاتف أي 581234567</string>
+    <string name="call">مكالمة</string>
+    <string name="has_refer">"اذا كان عندك من تود الإرتباط به يرجي كتابه معلوماته وسوف نقوم بالتواصل معه</string>
+
+
+</resources>

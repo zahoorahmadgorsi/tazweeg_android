@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.SignUpActivity5">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar_Dashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/ToolbarTheme" >
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar_Dashboard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="@dimen/padding_small"-->
+                    <!--android:text="@string/special_offers"-->
+                    <!--android:textSize="@dimen/large_text"-->
+                    <!--android:textStyle="bold" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/fab_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_home" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_user" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_3rd_step" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_4th_step" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_5th"
+                        android:tint="@color/colorAccent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/padding_large"
+                android:layout_marginStart="@dimen/padding_large"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:layout_margin="10dp"
+                    android:text="@string/names_of_2_relatives"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/large_text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/name_of_first_relative"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtFirstRelativeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/phone_number_of_first_relative"
+
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtFirstRelativePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/phone_number_prompt"
+                        android:inputType="phone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/relationship_with_first_relative"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnFirstRelativeRelation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/name_of_second_relative"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtSecondRelativeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/phone_number_of_second_relative"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtSecondRelativePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/phone_number_prompt"
+                        android:inputType="phone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/relationship_with_second_relative"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnSecondRelativeRelation"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/description_of_applicant"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtApplicantDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="start|top"
+                        android:layout_weight="1"
+                        android:imeOptions="actionDone"
+                        android:inputType="textMultiLine" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/the_language_title"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/cbArabic"
+                        android:text="@string/form5_language_arabic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-6dp"
+                        android:layout_weight="1"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent" />
+
+                    <CheckBox
+                        android:id="@+id/cbEnglish"
+                        android:text="@string/form5_language_english"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                    <Space
+                        android:layout_width="8dp"
+                        android:layout_height="match_parent" />
+
+                    <CheckBox
+                        android:id="@+id/cbOther"
+                        android:text="@string/form5_language_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/signature_title"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/flSignature"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/rect_back"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick="onClickSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:id="@+id/imgSignature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvSignature"
+                        android:gravity="center"
+                        android:text="@string/put_your_signature_here"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="-6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <CheckBox
+                    android:id="@+id/cbTermsAndConditions"
+                    android:layout_marginStart="@dimen/padding_large"
+                    android:text="@string/i_have_read_and_agree_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/btnTermsAndCondition"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPrevious"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlack"
+                    android:text="@string/previous"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    />
+                <Space
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnNext"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

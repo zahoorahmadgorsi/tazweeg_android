@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.PhoneActivity"
+    tools:showIn="@layout/activity_phone">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/mobile_verification"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/enter_mobile_number"
+                android:textColor="@color/colorBlack"
+                android:textAlignment="center"
+                android:textSize="@dimen/large_text"
+                android:layout_margin="20dp"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layoutDirection="ltr"
+                android:background="@drawable/borderbox"
+            >
+
+                <ImageView
+                    android:id="@+id/imgCountryFlag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/uae_flag"
+                    />
+
+                <EditText
+                    android:id="@+id/txtCountryCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="971"
+                    android:layout_margin="10dp"
+                    android:textIsSelectable="true"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:background="@null"/>
+
+                <EditText
+                    android:id="@+id/txtPhoneNumber"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/placeholder_mobile_number"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:background="@null"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+
+            <CheckBox
+                android:id="@+id/cbTerms"
+                android:text="@string/i_have_read_and_agree_to"
+                android:layout_width="wrap_content"
+                android:buttonTint="@color/colorAccent"
+                android:layout_height ="match_parent" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="3dp"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btnTermsAndCondition"
+                android:text="@string/terms_and_conditions"
+                android:textColor="@android:color/holo_blue_dark"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"
+            />
+        </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

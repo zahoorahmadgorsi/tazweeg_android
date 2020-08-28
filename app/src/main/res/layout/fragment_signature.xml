@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialogs.SignatureFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="X"
+            android:layout_gravity="start"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginStart="-10sp"
+            />
+
+        <TextView
+            android:text="@string/write_your_signature_below"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:layout_margin="@dimen/padding_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.kyanogen.signatureview.SignatureView
+            xmlns:sign="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/svSignaturePad"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            sign:penSize="5dp"
+            sign:backgroundColor="@android:color/transparent"
+            sign:penColor="#000000"
+            sign:enableSignature="true"/>
+
+        <!--<LinearLayout-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/bSaveSig"-->
+                <!--android:text="@string/save_signature"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="@drawable/btn_orange"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:paddingStart="8dp"-->
+                <!--android:paddingEnd="8dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <!--<View-->
+                <!--android:layout_width="16dp"-->
+                <!--android:layout_height="match_parent"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/bClearSig"-->
+                <!--android:text="@string/clear_signature"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="@drawable/btn_orange"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:paddingStart="8dp"-->
+                <!--android:paddingEnd="8dp"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bClearSig"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlack"
+                android:text="@string/clear_signature"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                />
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/bSaveSig"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:text="@string/save_signature"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

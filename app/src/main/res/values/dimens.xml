@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="medium_text">16sp</dimen>
+    <dimen name="large_text">20sp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <dimen name="form_field_height">64dp</dimen>
+    <dimen name="form_field_height2">44dp</dimen>
+
+</resources>

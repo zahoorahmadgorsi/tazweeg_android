@@ -1,0 +1,322 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Tazweeg</string>
+    <string name="consultant">Consultant</string>
+    <string name="failure">"Request could not be addressed. Please retry later."</string>
+    <string name="general_error">"Some error occurred at server, Please retry later."</string>
+    <string name="information">"Information"</string>
+    <string name="verification">"verification"</string>
+    <string name="yes">"Yes"</string>
+    <string name="no">"No"</string>
+    <string name="success">Success</string>
+    <!--onboarding-->
+    <string name="done">Done</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <!--Login-->
+    <string name="welcome">Welcome to tazweeg.com</string>
+    <string name="member_login">"Provide member login details"</string>
+    <string name="consultant_login">"Provide consultant login details"</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="login">Login</string>
+    <string name="or">OR</string>
+    <string name="login_via_smartpass">Login via smart pass</string>
+    <string name="smartpass_reason">SmartPass is your single credential to access UAE government services.</string>
+    <string name="need_an_account">Need an account ?</string>
+    <string name="signup">Sign Up</string>
+    <string name="copy_rights">Copyright © 2018 Tazweeg. All rights reserved.</string>
+    <string name="invalid_username">Invalid Username</string>
+    <string name="invalid_password">Invalid Password</string>
+    <string name="invalid_user_consultant">Invalid user. You are registered as a consultant, please go to consultant\'s login</string>
+    <string name="invalid_user_member">Invalid user. You are registered as a member, please go to member\'s login page</string>
+    <string name="verification_failed">"Invalid credentials. Please retry."</string>
+    <!--Forgot Password-->
+    <string name="phone_number_prompt">Mobile number with country code i.e. 97158xxxxxxx</string>
+    <string name="forgot_password_question">Forgot Password?</string>
+    <string name="forgot_password_message">We just need your registered phone number or email address. And we will send you credentials.</string>
+    <string name="email_prompt">Email i.e. abc@xyz.ab</string>
+    <string name="one_is_required">"Please provide either phone number or email address"</string>
+    <string name="check_phone_email">"Your credentials have been sent to the provided phone number or email address."</string>
+    <string name="emailPhoneNotExist">"Provided information does not exist."</string>
+    <string name="check_phone">"Your account was in active. To activate your account please enter the pin code which has been sent via SMS."</string>
+    <!--MEMBER/Common SIGNUP-->
+    <string name="select_state">Select An Emirate/State</string>
+    <string name="select_consultant">Select A Consultant</string>
+    <string name="gender_title">Gender *</string>
+    <string name="i_have_read_and_agree_to">I have read and agreed to the </string>
+    <string name="terms_and_conditions">terms and conditions</string>
+    <string name="select_emirate_s">Select Emirate/State (One or many):</string>
+    <string name="error_name_required">Name required</string>
+    <string name="error_invalid_phone_number">Invalid Phone number</string>
+    <string name="invalid_email">Invalid Email </string>
+    <string name="emirate_notValid">"Invalid Emirate/State, Please select at least one Emirate/State"</string>
+    <string name="error_accept_terms">"Please accept terms and conditions to proceed "</string>
+    <string name="duplicate_user">"You are already registered. If you don't remember your password please try the option 'forgot password'."</string>
+    <string name="ok">"OK"</string>
+    <string name="ksa_success_signup_msg">"Thanks for your registration, to complete your profile please contact us 0097126225889 or send us whatsapp "</string>
+    <string name="ksa_consultant_success_signup_msg">"Thanks for contacting tazweeg, we will contact you to complete all procedures."</string>
+    <!--Verification Code-->
+    <string name="verification_code">Verification Code</string>
+    <string name="we_have_sent_you">Please enter verification code which has been SMS to you..</string>
+    <string name="error_invalid_verification_code">Invalid Verification Code</string>
+    <string name="consultant_success_signup_msg">"Verification code has been verified, please visit our office for further proceedings."</string>
+    <string name="member_success_signup_msg">"Verification code has been verified, to login please use the credentials which has been SMS to you."</string>
+    <string name="otp_verified">"OTP verified successfully, please continue to rest of signup steps."</string>
+    <!--Member Profile-->
+    <string name="profile">Profile</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="zero_percent_complete">0% Complete</string>
+    <string name="member_name">Member Name</string>
+    <string name="member_code">Member Code</string>
+    <string name="profile_status">Profile Status</string>
+    <string name="consultant_name">Name</string>
+    <string name="consultant_mobile_number">Number</string>
+    <string name="emirates_serve_in">Emirates/States</string>
+    <string name="matchings">Matchings</string>
+    <string name="percentage_complete">"% Complete"</string>
+    <string name="areYouSure">Are you sure?</string>
+    <string name="incomplete_profile">"Please complete your profile to see the matchings."</string>
+    <string name="confirm">Confirm</string>
+    <!--Drawer-->
+    <string name="settings">Settings</string>
+    <string name="terms_and_condition">Terms and conditions</string>
+    <string name="faqs">FAQs</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="contact_us">Contact us</string>
+    <string name="sign_out">Sign out</string>
+    <!--Step 1-->
+    <string name="step_one">Step 1</string>
+    <string name="applicant_data">Applicant Data</string>
+    <string name="please_enter_your_data">Please Enter Your Data</string>
+    <string name="name_title">Name *</string>
+    <string name="mobile_number_title">Mobile Number *</string>
+    <string name="email_title">Email *</string>
+    <string name="emirates_id_card_number_title">National ID Card Number *</string>
+    <string name="family_name_title">Family Name *</string>
+    <string name="family_name_to_show">Want other members to see family name?</string>
+    <string name="date_of_birth_title">Date Of Birth *</string>
+    <string name="place_of_birth_title">Place Of Birth *</string>
+    <string name="country_title">Country *</string>
+    <string name="emirate_title">Emirate/State *</string>
+    <string name="address_title">Address *</string>
+    <string name="residence_title">Residence *</string>
+    <string name="ethnicity_title">Ethnicity *</string>
+    <string name="mother_nationality_title">Mother Nationality *</string>
+    <string name="submit_and_next"><![CDATA[Submit & Next]]></string>
+    <string name="invalid_emirates_id">Invalid National Id Card Number </string>
+    <string name="invalid_family_name">Invalid Family Name </string>
+    <string name="invalid_dob">Invalid Date Of Birth </string>
+    <string name="invalid_pob">Invalid Place Of Birth </string>
+    <string name="invalid_address">Invalid Address </string>
+    <!--Step 2-->
+    <string name="step_two">Step 2</string>
+    <string name="bride_arrangement_title">Bride Arrangement *</string>
+    <string name="accepting_polygamy_title">Are you accepting the polygammy?</string>
+    <string name="is_smoking_title">Is Smoking *</string>
+    <string name="skin_color_title">Skin Color *</string>
+    <string name="hair_color_title">Hair Color *</string>
+    <string name="hair_type_title">Hair Type *</string>
+    <string name="eye_color_title">Eye Color *</string>
+    <string name="height_title">Height *</string>
+    <string name="body_type_title">Body Type *</string>
+    <string name="body_weight_title">Body Weight (Kilograms) *</string>
+    <string name="sect_type_title">Sect Type *</string>
+    <string name="veil_title">Veil *</string>
+    <string name="has_driving_license_title">Has Driving License? *</string>
+    <!--Step 3-->
+    <string name="step_three">Step 3</string>
+    <string name="education_level_title">Education Level *</string>
+    <string name="commitment_to_religion_title">Commitment To Religion *</string>
+    <string name="financial_status_title">Financial Status *</string>
+    <string name="social_status_title">Social Status *</string>
+    <string name="has_children_title">Has Children? *</string>
+    <string name="number_of_children_title">Number Of Children *</string>
+    <string name="reproduction_title">Reproduction *</string>
+    <string name="is_working_title">Is Working *</string>
+    <string name="job_type_title">Job Type *</string>
+    <string name="occupation_title">Occupation *</string>
+    <string name="job_title_title">Job Title *</string>
+    <string name="annual_income_title">Annual Income *</string>
+    <string name="any_disease_title">Any disease i.e. sexual/skin/chronic/hereditary *</string>
+    <string name="disease_name_title">Disease ( Please Mention ) *</string>
+    <string name="invalid_occupation">Invalid Occupation </string>
+    <string name="invalid_job_title">Invalid Job Title </string>
+    <string name="invalid_disease_name">Invalid Disease Name </string>
+    <!--Step 4-->
+    <string name="step_four">Step 4</string>
+    <string name="spouse_data">Spouse Data</string>
+    <string name="required_spouse_specifications">Please provide your required spouse specifications!</string>
+    <string name="nationality_title">Nationality *</string>
+    <string name="age_title">Age *</string>
+    <string name="will_pay_to_bride_title">How much will pay to the bride *</string>
+    <string name="live_with_spouse_title">Where you will live with the spouse? *</string>
+    <string name="bride_data">Bride Data</string>
+    <string name="groom_data">Groom Data</string>
+    <string name="gcc_check">Do you accept to marry from GCC (Gulf Cooperation Council) ?</string>
+    <string name="female_social_status_check">"Do you accept to marry a divorced or married or widowed or single?"</string>
+    <string name="male_social_status_check">"Do you accept to marry a divorced or widowed or single?"</string>
+    <!--Step 5-->
+    <string name="step_five">Step 5</string>
+    <string name="names_of_2_relatives">Put the names of 2 relatives</string>
+    <string name="name_of_first_relative">Name of the first relative *</string>
+    <string name="phone_number_of_first_relative">Phone number of the first relative *</string>
+    <string name="relationship_with_first_relative">Relationship with the first relative *</string>
+    <string name="name_of_second_relative">Name of the second relative *</string>
+    <string name="phone_number_of_second_relative">Phone number of the second relative *</string>
+    <string name="relationship_with_second_relative">Relationship with the second relative *</string>
+    <string name="description_of_applicant">Short description of the applicant *</string>
+    <string name="form5_language_arabic">Arabic</string>
+    <string name="form5_language_english">English</string>
+    <string name="form5_language_other">Other</string>
+    <string name="the_language_title">The Language *</string>
+    <string name="signature_title">Signature *</string>
+    <string name="put_your_signature_here">Put your signature here</string>
+    <string name="submit">Submit</string>
+    <string name="save_signature">Save Signature</string>
+    <string name="clear_signature">Clear Signature</string>
+    <string name="write_your_signature_below">Write your signature below</string>
+    <string name="language_required">"Language is required"</string>
+    <string name="sign_required">"Signature is required"</string>
+    <!--Step 6-->
+    <string name="already_paid">"Fee has already been paid."</string>
+    <string name="profile_completed">"Payment has been made and profile completed successfully"</string>
+    <string name="payment">"Payment"</string>
+    <string name="age_check">"You profile is completed but it’s under process"</string>;
+    <!--Member Details-->
+    <string name="edit">Edit</string>
+    <string name="member_information">Profile</string>
+    <string name="required_information">Required</string>
+    <string name="choosing">Choosing</string>
+    <string name="matching">Matching</string>
+    <string name="married">Married</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="emirates_id">National ID</string>
+    <string name="family">Family</string>
+    <string name="place_of_birth">Place Of Birth</string>
+    <string name="age">Age</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="residence">Residence</string>
+    <string name="mother_nationality">Mother Nationality</string>
+    <string name="gender">Gender</string>
+    <string name="ethnicity"></string>
+    <string name="bride_arrangement">Bride Arrangement</string>
+    <string name="accepting_polygamy">Accepting the polygammy?</string>
+    <string name="is_smoking">Is Smoking</string>
+    <string name="skin_color">Skin Color</string>
+    <string name="hair_color">Hair Color</string>
+    <string name="hair_type">Hair Type</string>
+    <string name="eye_color">Eye Color</string>
+    <string name="height">Height</string>
+    <string name="body_type">Body Type</string>
+    <string name="body_weight">Body Weight (Kilograms)</string>
+    <string name="sect_type">Sect Type</string>
+    <string name="veil">Veil</string>
+    <string name="has_driving_license">Driving License</string>
+    <string name="education_level">Education Level</string>
+    <string name="religion_commitment">Commitment To Religion</string>
+    <string name="financial_status">Financial Status</string>
+    <string name="social_status">Social Status</string>
+    <string name="is_working">Is Working</string>
+    <string name="has_children">Has Children?</string>
+    <string name="reproduction">Reproduction</string>
+    <string name="number_of_children">Number Of Children</string>
+    <string name="occupation">Occupation</string>
+    <string name="job_type">Job Type</string>
+    <string name="job_title">Job Title</string>
+    <string name="any_disease">Any Disease</string>
+    <string name="disease_name">Disease Name</string>
+    <string name="live_with_spouse">Where Will You Live With Spouse?</string>
+    <string name="first_relative">First Relative</string>
+    <string name="second_relative">Second Relative</string>
+    <string name="first_relative_number">Phone Number Of First Relative</string>
+    <string name="second_relative_number">Phone Number Of Second Relative</string>
+    <string name="first_relative_relation">Relationship With First Relative</string>
+    <string name="second_relative_relation">Relationship With Second Relative </string>
+    <string name="applicant_description">Applicant Description</string>
+    <string name="will_pay_to_bride">Will Pay To Bride</string>
+    <string name="has_person_refer">Do you have a person to contact to?</string>
+    <!--Settings-->
+    <string name="change_password">Change Password</string>
+    <string name="change_language">Change Language</string>
+    <!--Change Password-->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm New Password</string>
+    <string name="old_pass_missing">"Old password is missing"</string>
+    <string name="new_pass_missing">"New password is missing"</string>
+    <string name="new_pass_length">"Password length should be at least 6 characters"</string>
+    <string name="passwords_not_match">"New and confirm new password are not matching</string>
+    <string name="changePasswordSuccess">"Password has been changed successfully."</string>
+    <string name="passwordIsMisMatched">"Password is mismatched"</string>
+    <!--Change Language-->
+    <string name="english">English</string>
+    <string name="arabic">العربية</string>
+    <!--Contact Us-->
+    <string name="tazweeg_phone_number">+97126225889</string>
+    <string name="tazweeg_email">app@tazweeg.com</string>
+    <string name="tazweeg_facebook">Facebook</string>
+    <string name="tazweeg_instagram">Instagram</string>
+    <string name="tazweeg_pinterest">Pinterest</string>
+    <string name="tazweeg_telegram">Telegram</string>
+    <string name="tazweeg_twitter">Twitter</string>
+    <string name="tazweeg_address">"5205 - Addax Tower, Al Reem Island, Abu Dhabi, UAE. PO Box 42524"</string>
+    <string name="emailClientTitle">Send email via ...</string>
+    <string name="emailSubject">Application feedback</string>
+    <string name="user_information">User Information</string>
+    <string name="user_phone_number">User Phone Number : </string>
+    <string name="app_information">App Information : </string>
+    <string name="device_information">Device Information : </string>
+    <string name="device_model">Device Model : </string>
+    <string name="android_version">Android Version : </string>
+    <string name="device_language">Device Language : </string>
+    <string name="app_language">App Language : </string>
+    <string name="carrier">Carrier : </string>
+    <string name="timezone">TimeZone : </string>
+    <string name="connection_status">Connection Status : </string>
+
+    <string name="title_activity_dashboard">ActivityDashboard</string>
+
+    <!--<string name="profile">الملف الشخصي</string>-->
+    <string name="home">Home</string>
+
+
+    <string name="please_wait_text">Please wait...</string>
+
+    <string name="name">Name</string>
+
+    <!--Heading for User details parameters-->
+    <string name="email">Email</string>
+
+    <string name="phone_number_title">Phone Number : *</string>
+
+
+    <string name="annual_income">Annual Income</string>
+
+    <!--Heading for Requirement details parameters-->
+
+
+    <string name="previous">Previous</string>
+    <string name="not_available">Not Available</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="title_activity_change_language">ChangeLanguageActivity</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_countries">CountriesActivity</string>
+    <string name="select_a_country">Select A Country</string>
+    <string name="title_activity_phone">PhoneActivity</string>
+    <string name="enter_mobile_number">Please enter mobile number</string>
+    <string name="placeholder_mobile_number">Mobile Number i.e. 58xxxxxxx</string>
+    <string name="call">Call</string>
+    <string name="has_refer">If you know someone and want to marry him/her give us his/her information and we will contact him/her.</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+
+</resources>

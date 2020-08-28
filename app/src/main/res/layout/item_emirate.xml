@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rect_back"
+    android:padding="4dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/colorBgLightBlue">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgEmirate"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/vLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:src="@android:drawable/btn_dialog"
+        app:civ_border_color="#9F000000"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/tvCountryName"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgEmirate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/colorAccent"
+        android:visibility="visible"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCountryName" />
+
+</android.support.constraint.ConstraintLayout>

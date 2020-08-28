@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.bulahej.tazweeg"
+        minSdkVersion 22        //version 5.1, lollipop
+        targetSdkVersion 28
+        versionCode 20
+        versionName "4.3.0"
+        //first digit = major breaking changes version, second digit = minor changes version, third digit = minor patches and bug fixes. e.g versionName "2.0.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    bundle {
+        language {
+        }
+    }
+//    repositories {
+//        maven { url 'https://jitpack.io' }
+//    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+
+    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+
+    implementation 'com.amitshekhar.android:jackson-android-networking:1.0.2'
+    implementation 'com.kyanogen.signatureview:signature-view:1.2'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+
+    implementation 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    implementation 'com.ogaclejapan.smarttablayout:library:1.2.1@aar'
+
+    implementation 'com.google.code.gson:gson'
+    implementation 'com.android.support:design:28.0.0'
+
+}

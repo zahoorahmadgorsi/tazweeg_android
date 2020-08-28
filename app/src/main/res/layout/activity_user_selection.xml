@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.bulahej.tazweeg.activities.UserSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/logo_vertical" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_bottom"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btnMember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/member"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:stateListAnimator="@null"
+                    />
+
+                <Button
+                    android:id="@+id/btnConsultant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/consultant"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:stateListAnimator="@null"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/need_an_account"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_margin="10dp"
+                android:fontFamily="Bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/btnMemberSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/member_signup"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="15dp"
+                    android:stateListAnimator="@null"
+                    />
+
+                <Button
+                    android:id="@+id/btnConsultantSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/consultant_signup"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:stateListAnimator="@null"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:background="@drawable/language_background"
+                >
+
+                <Button
+                    android:id="@+id/btnEnglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="English"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:stateListAnimator="@null"
+                    />
+
+                <Button
+                    android:id="@+id/btnArabic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="العربية"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:stateListAnimator="@null"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgSnapChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/snap_chat"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

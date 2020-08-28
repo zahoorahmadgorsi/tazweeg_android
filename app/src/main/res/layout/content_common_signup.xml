@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.CommonSignupActivity"
+    tools:showIn="@layout/activity_common_signup">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:adjustViewBounds="true"
+                android:layout_marginEnd="150dp"
+                android:layout_marginStart="150dp"
+                android:src="@drawable/signup"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+                <EditText
+                    android:id="@+id/tvCountryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:drawableStart="@drawable/user_name"
+                    android:drawablePadding="10dp"
+                    android:inputType="text"/>
+            </android.support.design.widget.TextInputLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/llPhoneNumber"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="10dp"-->
+            <!--android:layout_marginEnd="10dp"-->
+            <!--android:layout_gravity="start"-->
+            <!--android:gravity="start">-->
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--&gt;-->
+                    <!--<EditText-->
+                        <!--android:id="@+id/txtCountryCode"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:drawableStart="@drawable/phone_icon"-->
+                        <!--android:hint="@string/country_code"-->
+                        <!--android:drawablePadding="10dp"-->
+                        <!--android:enabled="false"-->
+                        <!--android:inputType="none"/>-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--&gt;-->
+                <!--<EditText-->
+                    <!--android:id="@+id/txtMobileNumber"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="@string/phone_number_without_country_code"-->
+                    <!--android:inputType="phone"/>-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--</LinearLayout>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email_prompt"
+                    android:drawableStart="@drawable/email_icon"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+                <!--<EditText-->
+                    <!--android:id="@+id/txtGender"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:hint="@string/gender"-->
+                    <!--android:drawableStart="@drawable/gender_icon"-->
+                    <!--android:drawablePadding="10dp"/>-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/gender_title"
+                    android:textStyle="bold" />
+                <Spinner
+                    android:id="@+id/spnBrideArrangement"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_field_height2"
+                    android:background="@drawable/spinner_background"
+                    android:spinnerMode="dropdown"
+                    android:drawableStart="@drawable/gender_icon"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/lblEmirates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="start"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:textSize="@dimen/large_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@string/select_emirate_s"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvEmirate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:scrollbars="none"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@+id/lblEmirates"
+                tools:listitem="@layout/item_emirate" />
+
+            <LinearLayout
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <CheckBox
+                    android:id="@+id/cbTerms"
+                    android:text="@string/i_have_read_and_agree_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/btnTermsAndCondition"
+                    android:text="@string/terms_and_conditions"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:background="@android:color/transparent"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded_corner"
+                />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pbProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:isScrollContainer="true">
+
+
+        <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/btnCross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="X"
+                    android:layout_gravity="start"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginStart="-20sp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo_horizontal"
+                    android:adjustViewBounds="true"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginStart="70dp"
+                    />
+
+                <TextView
+                    android:id="@+id/lblWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/welcome"
+                    android:textColor="@color/colorBlack"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_margin="0dp"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    >
+                    <EditText
+                        android:id="@+id/txtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/user_name"
+                        android:drawableStart="@drawable/user_name"
+                        android:drawablePadding="10dp"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    >
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password"
+                    android:drawableStart="@drawable/password_icon"
+                    android:inputType="textPassword"
+                    android:drawablePadding="10dp"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/forgot_password_question"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/login"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text = "@string/or"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="normal"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    />
+
+                <Button
+                    android:id="@+id/btnLoginViaSmartPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/login_via_smartpass"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawableStart="@drawable/smartpass_icon"
+                    android:paddingStart="5dp"
+                    android:drawablePadding="0dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/smartpass_reason"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:textSize="12dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:text = "@string/copy_rights"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/lblVersionBuild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:text = "Version Build"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10sp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

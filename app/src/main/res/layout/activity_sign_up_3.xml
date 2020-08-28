@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.SignUpActivity3">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar_Dashboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:theme="@style/ToolbarTheme" >
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar_Dashboard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/fab_margin">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_home" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_user" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_3rd_step"
+                        android:tint="@color/colorAccent" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_4th_step" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@color/colorBlack" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_5th" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/padding_large"
+                android:layout_marginStart="@dimen/padding_large"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/applicant_data"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/large_text"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:text="@string/please_enter_your_data"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/education_level_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnEducationLevel"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/commitment_to_religion_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnCommitmentToReligion"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/financial_status_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnFinancialStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <!--Social Status-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/social_status_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnSocialStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llHasChildren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/has_children_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnHasChildren"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llNumberOfChildren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/number_of_children_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnNumberOfChildren"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llReproduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/reproduction_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnReproduction"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/is_working_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnIsWorking"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llJobDetails"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="@string/job_type_title"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spnJobType"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/form_field_height2"
+                            android:background="@drawable/spinner_background"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="@string/occupation_title"
+                            android:textStyle="bold" />
+                        <EditText
+                            android:id="@+id/txtOccupation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="@string/job_title_title"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/txtJobTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:imeOptions="actionNext"
+                            android:inputType="text" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/colorBlack"
+                            android:text="@string/annual_income_title"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spnAnnualIncome"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/form_field_height2"
+                            android:background="@drawable/spinner_background"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/any_disease_title"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spnAnyDisease"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/form_field_height2"
+                        android:background="@drawable/spinner_background"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llDiseaseDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/form_field_height"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/colorBlack"
+                        android:text="@string/disease_name_title"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/txtDiseaseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bPrevious"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlack"
+                    android:text="@string/previous"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    />
+                <Space
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/bNext"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:text="@string/submit_and_next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

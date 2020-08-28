@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/llYourProfile"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorLightGrey"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPercentComplete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:focusableInTouchMode="false"
+                    android:padding="5dp"
+                    android:src="@drawable/zero_percent" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/padding_small"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:text="@string/your_profile"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/large_text"
+                        />
+
+                    <TextView
+                        android:id="@+id/lblPercentComplete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:text="@string/zero_percent_complete"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/large_text" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imgRightArrow_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:focusableInTouchMode="false"
+                    android:padding="15dp"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/profile"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/large_text"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/member_name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/lblMemberName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:text="Test Purpose"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/member_code"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/lblMemberCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:text="Tazweeg_1608"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/profile_status"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/lblProfileStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:text="Paid"
+                        android:textColor="@color/colorBlack"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/medium_text" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rounded_corner"
+                    android:gravity="center"
+                    android:text="@string/consultant"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="20dp"
+                    android:textSize="@dimen/large_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/consultant_name"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/lblConsultantName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:text="Test Purpose"
+                        android:textColor="@color/colorBlack"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/medium_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/consultant_mobile_number"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/lblConsultantNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:text="+97158xxxxxxx"
+                        android:textColor="@color/colorBlack"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/medium_text"
+                        tools:ignore="RtlCompat" />
+
+                    <ImageView
+                        android:id="@+id/imgWhatsApp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/whatsapp_icon"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/emirates_serve_in"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/lblConsultantStates"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingStart="20dp"
+                        android:textColor="@color/colorBlack"
+                        android:textAlignment="viewStart"
+                        android:textSize="@dimen/medium_text" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMatchCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblMatchCount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/matching_count_blue"
+                    android:gravity="center"
+                    android:text="333"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/matchings"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/medium_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</FrameLayout>
