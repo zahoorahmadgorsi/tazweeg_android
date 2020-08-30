@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:MaterialDesign-1.5:unspecified@jar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/MaterialDesign-1.5/build/.transforms/35f77dbc9dcb55d9694cf03f806f7d34/MaterialDesign-1.5/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/MaterialDesign-1.5/build/.transforms/35f77dbc9dcb55d9694cf03f806f7d34/MaterialDesign-1.5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/MaterialDesign-1.5/build/.transforms/35f77dbc9dcb55d9694cf03f806f7d34/MaterialDesign-1.5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
