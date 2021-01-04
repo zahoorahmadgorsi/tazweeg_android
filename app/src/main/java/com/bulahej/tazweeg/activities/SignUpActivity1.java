@@ -134,6 +134,10 @@ public class SignUpActivity1 extends AppCompatActivity {
             e.printStackTrace();
         }
         txtDateOfBirth.setText(dob);
+        //disabling dob for members
+        if(Utilities.getSelectedUserType(preferences) == USER_TYPE_MEMBER && dob.length() > 0) {
+            txtDateOfBirth.setEnabled(false);
+        }
         txtPlaceOfBirth.setText( currentMember.getBirthPlace());
         int index = Utilities.getIndexByID(countryList,currentMember.getCountryId());
         if (index >= 0) {
